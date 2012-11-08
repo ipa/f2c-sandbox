@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-extern "C" void func_3d_(float* arr, int* dim_i, int* dim_j, int* dim_k)
+extern void func_3d_(float* arr, int* dim_i, int* dim_j, int* dim_k)
 {
 	printf("3 D Code length:%i dim_i:%i dim_j:%i dim_k:%i \n", 
 		(*dim_k * *dim_i * *dim_j), *dim_i, *dim_j, *dim_k);
@@ -29,7 +29,7 @@ extern "C" void func_3d_(float* arr, int* dim_i, int* dim_j, int* dim_k)
 	printf("\n3 D Code END\n\n");
 }
 
-extern "C" void func_4d_(float* arr, int* dim_i, int* dim_j, int* dim_k, int* dim_l)
+extern void func_4d_(float* arr, int* dim_i, int* dim_j, int* dim_k, int* dim_l)
 {
 	printf("4 D Code length:%i dim_i:%i dim_j:%i dim_k:%i dim_l:%i\n", 
 		(*dim_i * *dim_j * *dim_k * *dim_l), *dim_i, *dim_j, *dim_k, *dim_l);
@@ -62,7 +62,7 @@ extern "C" void func_4d_(float* arr, int* dim_i, int* dim_j, int* dim_k, int* di
 	printf("\n4 D Code END\n\n");
 }
 
-extern "C" void func_2d_(float* arr, int* len)
+extern void func_2d_(float* arr, int* len)
 {
 	printf("2 D Code length:%i \n", *len);
 	int i, j;
@@ -82,7 +82,7 @@ extern "C" void func_2d_(float* arr, int* len)
 }
 
 
-extern "C" void func_2d_sub_(float* arr, int* len)
+extern void func_2d_sub_(float* arr, int* len)
 {
 	printf("2 D Code length:%i \n", *len);
 	int i, j;
@@ -101,7 +101,7 @@ extern "C" void func_2d_sub_(float* arr, int* len)
 	printf("\n2 D Code END\n\n");
 }
 
-extern "C" void func_(float* arr, int* len)
+extern void func_(float* arr, int* len)
 {
 	printf("1 D Code \n");
 	int i;
